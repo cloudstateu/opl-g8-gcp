@@ -31,7 +31,7 @@ In this lab, you'll restrict access to your VM via SSH to work only through GCP 
 
    ![img](./img/verify_ssh.png)
 
-1. Check SSH connection details. Check if the IP address is part of the range `35.235.240.0/20`.
+1. Check SSH connection details. Check the IP address range.
 
    ```bash
    env | grep SSH_CONNECTION
@@ -39,19 +39,7 @@ In this lab, you'll restrict access to your VM via SSH to work only through GCP 
 
    ![img](./img/ssh_connection_details.png)
 
-1. Verify you can SSH into it via your local machine
-
-   ```bash
-   gcloud compute ssh --project=<YOUR-PROJECT-NAME> --zone=<VM-ZONE> <VM NAME>
-   ```
-
-1. Check SSH connection details. It should differ from the SSH connection made via the portal
-
-   ```bash
-   env | grep SSH_CONNECTION
-   ```
-
-1. Modify your network. Restrict access to SSH only for IP addresses that belong to the `35.235.240.0/20` range.
+1. Modify network. Restrict access to SSH only for IP addresses that belong to the `35.235.240.0/20` range.
 
    ![img](./img/new_ssh_settings.png)
 

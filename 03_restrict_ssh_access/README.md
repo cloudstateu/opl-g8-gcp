@@ -39,12 +39,11 @@ In this lab, you'll restrict access to your VM via SSH to work only through GCP 
 
    ![img](./img/ssh_connection_details.png)
 
-1. Modify network. Restrict access to SSH only for IP addresses that belong to the `35.235.240.0/20` range.
+1. Modify network. Restrict access to SSH for IP addresses that belong to the Cloud Shell VM IP address range (e.g.: `35.235.240.0/20`).
 
    ![img](./img/new_ssh_settings.png)
 
 1. Check if you can SSH into VM via the portal.
-1. Check if you can SSH into VM from your local machine.
 
 ## END LAB
 

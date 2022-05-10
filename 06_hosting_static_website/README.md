@@ -31,7 +31,7 @@ W tym laboratorium zobaczysz jak hostować statyczną aplikację internetową na
 1. Przejdź do katalogu `/app` i wykonaj komendę:
 
    ```bash
-   gsutil cp . gs://<BUCKET_NAME>
+   gsutil cp -r . gs://<BUCKET_NAME>
    ```
 
 ## Krok 4: Udostępnij pliki publicznie

@@ -51,6 +51,12 @@ TBA
    ```bash
    gsutil cp data.csv gs://[BUCKET_NAME]
    ```
+   
+1. Udostępnij plik do publicznego odczytu
+
+    ```bash
+    gsutil defacl set public-read gs://[BUCKET_NAME]
+    ```
 
 ## Krok 3: Zaimportuj dane do bazy danych
 

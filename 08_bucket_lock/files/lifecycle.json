@@ -3,11 +3,11 @@
   [
     {
         "action": {"storageClass": "NEARLINE", "type": "SetStorageClass"},
-        "condition": {"age": "0"}
+        "condition": {"age": "1"}
     },
     {
         "action": {"storageClass": "COLDLINE", "type": "SetStorageClass"},
-        "condition": {"age": "1"}
+        "condition": {"age": "90"}
     },
     {
         "action": {"storageClass": "ARCHIVE", "type": "SetStorageClass"},

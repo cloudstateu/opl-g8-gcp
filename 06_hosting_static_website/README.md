@@ -15,7 +15,7 @@ W tym laboratorium zobaczysz jak hostować statyczną aplikację internetową na
 1. Wykonaj komendę:
 
    ```bash
-   git clone https://github.com/cloudstateu/lp-workshops
+   git clone https://github.com/cloudstateu/opl-g8-gcp
    ```
 
 ## Krok 2: Stwórz Storage Bucket

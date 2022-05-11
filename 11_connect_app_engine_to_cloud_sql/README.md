@@ -141,11 +141,16 @@ gcloud app deploy
 
 ## Krok 6: Umożliwienie połączeń z lokalnego środowiska do Cloud SQL
 
-1. Sprawdź swój publiczny adres IP (możesz to zrobić tutaj: [https://whatismyipaddress.com/](https://whatismyipaddress.com/))
-1. Dodaj adres IP jako `authorizedNetwork` dla instancji:
+1. Sprawdź swój publiczny adres IP. Wykonaj poniższą komendę w Cloud Shell:
+
+    ```bash
+    curl ipinfo.io/ip
+    ```
+
+3. Dodaj adres IP jako `authorizedNetwork` dla instancji:
 
    ```bash
-   gcloud sql instances patch sql-instance --authorized-networks=[CIDR]
+   gcloud sql instances patch sql-instance --authorized-networks=<CIDR>
    ```
 
    Format wartości CIDR: `<IP_ADDRESS>/32` (podaj swój adres IP)

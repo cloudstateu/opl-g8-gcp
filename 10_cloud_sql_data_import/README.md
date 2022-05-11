@@ -45,7 +45,7 @@ TBA
     gsutil mb gs://[BUCKET_NAME]
     ```
 
-1. Przejdź do folderu `/files`
+1. Przejdź do folderu `files/`
 1. Przekopiuj plik z danymi:
 
    ```bash

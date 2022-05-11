@@ -19,21 +19,13 @@ W momencie gdy w Cloud Storage Bucket będą znajdowały się dane aplikacja bę
 gsutil mb gs://[YOUR_BUCKET_NAME]
 ```
 
-## Krok 2: Udostępnij dane w Cloud Storage Bucket publicznie
+## Krok 2: Skonfiguruj aplikacje
 
-Poniższa komenda udostępni dane w Bucket do publicznego odczytu (`public-read`)
-
-```bash
-gsutil defacl set public-read gs://[YOUR_BUCKET_NAME]
-```
-
-## Krok 3: Skonfiguruj aplikacje
-
-1. Przejdź do folderu `/app`
+1. Przejdź do folderu `app/`
 1. Otwórz plik `app.yaml` i uzupełnij wartość zmiennej `GCLOUD_STORAGE_BUCKET` uzupełniając ją nazwą Twojego Storage Bucket
 1. Zapisz plik
 
-## Krok 4: Wykonaj wdrożenie aplikacji
+## Krok 3: Wykonaj wdrożenie aplikacji
 
 1. Utwórz aplikację App Engine. Wybierz region `europe-west3`.
 

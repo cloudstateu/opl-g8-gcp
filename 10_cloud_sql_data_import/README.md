@@ -55,7 +55,7 @@ TBA
 1. Udostępnij plik do publicznego odczytu
 
     ```bash
-    gsutil defacl set public-read gs://[BUCKET_NAME]
+    gsutil iam ch allUsers:objectViewer  gs://[BUCKET_NAME]
     ```
 
 ## Krok 3: Zaimportuj dane do bazy danych

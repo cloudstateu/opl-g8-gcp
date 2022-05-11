@@ -74,7 +74,7 @@ gcloud app deploy
 
 ## Krok 5: Wykonanie połączenia z bazą danych z lokalnego środowiska deweloperskiego
 
-> Podczas ćwiczeń rolę lokalnego środowiska deweloperskiego będzie pełnił Cloud Shell. Te same kroki możesz wykonać chcąc podłączyć się do Cloud SQL ze swojej stacji roboczej (po wcześniejszym skonfigurowaniu gcloud).
+> Podczas ćwiczeń rolę lokalnego środowiska deweloperskiego pełni Cloud Shell. Te same kroki możesz wykonać chcąc podłączyć się do Cloud SQL ze swojej stacji roboczej (po wcześniejszym skonfigurowaniu gcloud).
 
 1. Przejdź do folderu `/app`
 1. Zainstaluj zależności aplikacji:

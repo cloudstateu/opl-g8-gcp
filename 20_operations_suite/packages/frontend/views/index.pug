@@ -12,7 +12,10 @@ html(lang="pl-PL")
       h1 Szkolenie Google Cloud Platform
       p(class='text') Szkolenie podczas którego nauczysz się wykorzystywać Cloud Operations suite w praktyce
 
-      if order && order.id
+      if paid && order && order.id
+        p.success Zgłoszenie #{order.id} zostało opłacone!
+        a(class='text', href='/') Wróć na stronę główną
+      else if order && order.id
         p.success Zgłoszenie #{order.id} zostało przyjęte!
         form(action="/pay", method="post")
           input(type="hidden", name="orderId", value=order.id)

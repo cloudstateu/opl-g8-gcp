@@ -41,7 +41,7 @@ async function startServer() {
         data: { order: { id: orderId } }
       });
 
-      res.render('index', { paid: true });
+      res.render('index', { paid: true, order: { id: orderId } });
     } catch (err) {
       next(err);
     }

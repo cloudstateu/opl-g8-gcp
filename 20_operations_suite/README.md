@@ -8,6 +8,8 @@ Create application for the first time using:
 gcloud app deploy ./packages/dispatch.yaml ./packages/frontend/app.yaml ./packages/orders/app.yaml ./packages/payments/app.yaml
 ```
 
+> :warning: Before you confirm deployment check whether `target url` `REGION_ID` matches URLs in code. Depending on region where you provisioned App Engine it have different `REGION_ID` and thus `target url` ([explanation](https://cloud.google.com/appengine/docs/standard/python/how-requests-are-routed#urls)). 
+
 ## How to test application
 
 1. Deploy application to App Engine

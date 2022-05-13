@@ -22,3 +22,11 @@ gcloud app deploy ./packages/dispatch.yaml ./packages/frontend/app.yaml ./packag
 ```bash
 curl -X POST -d '{ "data": { "order": { "id": "<ORDER_ID>" } } }' -H 'Content-type: application/json' <APP_ENGINE_URL>/payments/
 ```
+
+### Metrics Explorer configuration
+
+To visualize ratio between users who want to attend event and those who actually paid for it create custom metrics and a monitoring dashboard.
+
+Create two custom logs-based metrics for logs with message _"Order created"_ and _"Payment received"_. Then create a dashboard with following configuration:
+
+![img](./img/01-metrics-setup.png)

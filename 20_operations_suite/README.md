@@ -8,7 +8,7 @@ Create application for the first time using:
 gcloud app deploy ./packages/dispatch.yaml ./packages/frontend/app.yaml ./packages/orders/app.yaml ./packages/payments/app.yaml
 ```
 
-> :warning: Before you confirm deployment check whether `target url` `REGION_ID` matches URLs in code ([`frontend/index.js`](./packages/frontend/index.js#L25), [`frontend/index.js`](./packages/frontend/index.js#L40), [`payments/routes.js`](./packages/payments/routes.js#L13)). Depending on region where you provisioned App Engine it have different `REGION_ID` and thus `target url` ([explanation](https://cloud.google.com/appengine/docs/standard/python/how-requests-are-routed#urls)). 
+> :warning: Before you confirm deployment check whether `target url` matches URLs in code ([`frontend/index.js`](./packages/frontend/index.js#L25), [`frontend/index.js`](./packages/frontend/index.js#L40), [`payments/routes.js`](./packages/payments/routes.js#L13)). Depending on region where you provisioned App Engine it have different `REGION_ID` and thus `target url` ([explanation](https://cloud.google.com/appengine/docs/standard/python/how-requests-are-routed#urls)). 
 
 ## How to test application
 
